@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой медиаплеер</title>
+    <link rel="stylesheet" href="style_player.css">
+</head>
+
+<body>
+    <div class="player">
+        <video controls>
+          <source src="./video/12.mp4" type="video/mp4" />
+          
+        </video>
+        <div class="controls">
+            <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+            <button class="stop" data-icon="S" aria-label="stop"></button>
+            <div class="timer">
+                <div></div>
+                <span aria-label="timer">00:00</span>
+            </div>
+            <button class="rwd" data-icon="R" aria-label="rewind"></button>
+            <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+            <button class="snd" data-icon="SD" aria-label="Sound"></button>
+        </div>
+    </div>
+    <script src="play.js"></script>
+</body>
+
+</html>
